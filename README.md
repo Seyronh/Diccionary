@@ -9,7 +9,7 @@ $ npm install diccionary --save
 ```
 ## Constructor
 The constructor need one argument
-* lowercase: True or False (this just convert text to lowercase before adding it to the diccionary so hello and HeLlO will be the same word)
+* lowercase: True or False (this just convert text to lowercase before adding it to the dictionary so hello and HeLlO will be the same word)
 
 ## Properties
 * maxid:Max number assigned to a word
@@ -33,11 +33,11 @@ This function use the already explained convert function but then it divide the 
 
 ## Example
 ```js
-const diccionaries = require('diccionary')
-const diccionary = new diccionaries(true) //true => it will be lowercase
+const diccionaries = require('dictionary')
+const dictionary = new diccionaries(true) //true => it will be lowercase
 let exampletext = 'Nory was a Catholic because her mother was a Catholic, and Nory’s mother was a Catholic because her father was a Catholic, and her father was a Catholic because his mother was a Catholic, or had been.'
-diccionary.add(exampletext) //In this case Nory and Nory's will be different words and this also applies to Catholic - Catholic,
-console.log(diccionary.list)
+dictionary.add(exampletext) //In this case Nory and Nory's will be different words and this also applies to Catholic - Catholic,
+console.log(dictionary.list)
 /*
 Console Output:
 {
@@ -58,8 +58,8 @@ Console Output:
   'been.': 15
 }
 */
-console.log(diccionary.maxid) //Console Output:15
-console.log(diccionary.count)
+console.log(dictionary.maxid) //Console Output:15
+console.log(dictionary.count)
 /*
 Console Output:
 {
@@ -80,13 +80,13 @@ Console Output:
   'been.': 1
 }
 */
-console.log(diccionary.maxcount)
+console.log(dictionary.maxcount)
 /*
 In this case its return "was" because its the first element in the list with the highest value
 Console Output:{ word: 'was', counts: 6 }
 */
 
-console.log(diccionary.convert(exampletext))
+console.log(dictionary.convert(exampletext))
 /*
 Console Output:[
   1,  2, 3, 4,  5,  6,  7, 2,  3,  8,
@@ -95,7 +95,7 @@ Console Output:[
   7,  2, 3, 8, 13, 14, 15
 ]
 */
-console.log(diccionary.convertnormalized(exampletext))
+console.log(dictionary.convertnormalized(exampletext))
 /*
 Console Output:[
   0.06666666666666667, 0.13333333333333333,
