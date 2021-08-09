@@ -1,4 +1,4 @@
-![Author](https://raster.shields.io/static/v1?label=Creador&message=Seyron#5532&color=RED?style=flat&logo=appveyor)
+![Author](https://raster.shields.io/static/v1?label=Author&message=Seyron#5532&color=RED?style=flat&logo=appveyor)
 
 ## Install
 Before installing it you need to install [Node.js](https://nodejs.org/en/download/)
